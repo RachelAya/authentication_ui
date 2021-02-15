@@ -104,6 +104,48 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.greenAccent,
                             decoration: TextDecoration.underline)),
                   ),
+                ),
+                SizedBox(
+                  height: 40.0,
+                ),
+                Container(
+                  height: 40.0,
+                  child: Material(
+                    borderRadius: BorderRadius.circular(20.0),
+                    shadowColor: Colors.grey[700],
+                    color: Colors.green,
+                    elevation: 7.0,
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: Center(
+                        child: Text(
+                          'LOGIN',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                Container(
+                  height: 40.0,
+                  color: Colors.transparent,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.blue,
+                          style: BorderStyle.solid,
+                          width: 1.0,
+                        ),
+                        color: Colors.transparent,
+                        borderRadius: BorderRadius.circular(20.0)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                    ),
+                  ),
                 )
               ],
             ),
