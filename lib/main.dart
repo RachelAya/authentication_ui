@@ -1,5 +1,6 @@
 import 'package:authentication_screens/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -144,6 +145,20 @@ class _MyHomePageState extends State<MyHomePage> {
                         borderRadius: BorderRadius.circular(20.0)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          FontAwesomeIcons.facebook,
+                          size: 25,
+                          color: Colors.blue,
+                        ),
+                        SizedBox(
+                          width: 10.0,
+                        ),
+                        Text(
+                          'Login with facebook',
+                          style: TextStyle(fontSize: 16, color: Colors.blue),
+                        ),
+                      ],
                     ),
                   ),
                 )
